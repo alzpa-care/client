@@ -1,0 +1,37 @@
+{
+  // 옵션이 true로 설정되어 있는 설정 파일을 만나면 더 이상 상위 폴더로 올라가지 않습니다.
+  "root": true,
+
+  //기업들이 ESLint로 자바스크립트 코드를 린트(lint)하는데요. 설정 파일의 extends 옵션을 통해서 이러한 기업들이 공개해놓은 설정을 그대로 가져와 기반(base) 설정으로 활용할 수 있습니다.
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "next/core-web-vitals",
+    "prettier" // eslint-config-prettier prettier와 중복된 eslint 규칙 제거
+  ],
+
+  //ESLint에는 기본으로 제공되는 규칙(rule) 외에도 추가적인 규칙(rule)을 사용할 수 있도록 만들어줌
+  "plugins": ["prettier"],
+
+  //ESLint는 기본적으로 미리 선언하지 않고 접근하는 변수에 대해서는 오류를 내기 때문에 이렇게 각 실행 환경(runtime)에서 기본적으로 제공되는 전역 객체에 대해서 설정을 통해 알려줘야 함
+  "env": {
+    // 전역객체를 eslint가 인식하는 구간
+    "browser": true, // document나 window 인식되게 함
+    "node": true, //node 환경도 인식
+    "es6": true
+  },
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  //설정 파일에서 rules 옵션은 규칙 하나 하나를 세세하게 제어하기 위해서 사용
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-props-no-spreading": "off", //props를 컴포넌트에 전달할 때 props 객체의 압축을 풀기 위해 spread 구문을 사용할 때 에러가 발생한다. 이 경우에는 에러를 비활성화하는 것이 제일 낫다.
+    "@typescript-eslint/no-use-before-define": "off" // 변수 선언 전에 변수가 사용되어도 허용
+  },
+
+  "ignorePatterns": ["node_modules/"] // eslint 미적용될 폴더나 파일 명시
+}
