@@ -7,6 +7,12 @@ import BtnInGoogle from '@/assets/icon/BtnInGoogle.svg';
 import BtnInNaver from '@/assets/icon/BtnInNaver.svg';
 import BtnInKakao from '@/assets/icon/BtnInKakao.svg';
 import AlzpaCareNoFont from '@/assets/icon/AlzpaCareNoFont.svg';
+import Github from '@/assets/icon/Github.svg';
+import Velog from '@/assets/icon/Velog.svg';
+import Youtube from '@/assets/icon/Youtube.svg';
+import KSH from '@/assets/icon/KSH.svg';
+import KJW from '@/assets/icon/KJW.svg';
+import LYJ from '@/assets/icon/LYJ.svg';
 
 export {
   CheckOn,
@@ -18,4 +24,10 @@ export {
   BtnInNaver,
   BtnInKakao,
   AlzpaCareNoFont,
+  Github,
+  Velog,
+  Youtube,
+  KSH,
+  KJW,
+  LYJ,
 };
