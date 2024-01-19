@@ -1,5 +1,7 @@
+import SignUpContents from '@/components/signUp/SignUpContents';
+
 function SignUp() {
-  return <div>SignUp</div>;
+  return <SignUpContents />;
 }
 
 export default SignUp;
