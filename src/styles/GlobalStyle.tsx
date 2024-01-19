@@ -20,9 +20,9 @@ const globals = css`
     scrollbar-width: none; /* 파이어폭스 */
   }
 
-  ::-webkit-scrollbar {
-    display: none; /* 웹킷 기반 브라우저 (Chrome, Safari...) */
-  }
+  /* ::-webkit-scrollbar {
+    display: none; 
+  } */
 
   li {
     list-style: none;
