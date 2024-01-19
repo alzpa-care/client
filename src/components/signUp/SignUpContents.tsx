@@ -3,6 +3,9 @@ import Button from '@/components/common/Button';
 import theme from '@/styles/theme';
 
 function SignUpContents() {
+  const onClickHandler = () => {
+    window.location.href = '/signUp/terms';
+  };
   return (
     <div css={SignUpContentsStyles}>
       <div css={TitleStyles}>회원가입</div>
@@ -14,6 +17,7 @@ function SignUpContents() {
           backgroundColor="#DFEDDE"
           borderColor="#DFEDDE"
           fontColor={theme.palette.black}
+          onClick={onClickHandler}
         />
       </div>
       <div css={GroupStyles}>
