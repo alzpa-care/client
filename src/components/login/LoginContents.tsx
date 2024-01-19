@@ -5,7 +5,7 @@ import Input from '@/components/common/Input';
 import Button from '@/components/common/Button';
 import theme from '@/styles/theme';
 import { Google, Kakao, Naver } from '@/assets/icon';
-import CheckBox from '../common/CheckBox';
+import CheckBox from '@/components/common/CheckBox';
 
 function LoginContents() {
   const [saveId, setSaveId] = useState(false);
