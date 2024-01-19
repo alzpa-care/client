@@ -45,6 +45,7 @@ const ButtonStyles = ({
   height: 55px;
   font-size: 16px;
   color: ${fontColor};
+  font-weight: bold;
   background-color: ${backgroundColor};
   border: ${borderColor} solid 1px;
   border-radius: 8px;

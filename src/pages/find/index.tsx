@@ -1,5 +1,7 @@
+import FindContents from '@/components/find/FindContents';
+
 function Find() {
-  return <div>Find</div>;
+  return <FindContents />;
 }
 
 export default Find;
