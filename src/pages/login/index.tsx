@@ -1,5 +1,7 @@
+import LoginContents from '@/components/login/LoginContents';
+
 function Login() {
-  return <div>Login</div>;
+  return <LoginContents />;
 }
 
 export default Login;
