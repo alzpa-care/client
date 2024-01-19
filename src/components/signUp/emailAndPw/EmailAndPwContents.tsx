@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 
 function EmailAndPwContents() {
   const onClickHandler = () => {
-    window.location.href = '/signUp/nicknameAndPhoneNumber';
+    window.location.href = '/signUp/profile';
   };
   return (
     <div css={EmailAndPwContentsStyles}>

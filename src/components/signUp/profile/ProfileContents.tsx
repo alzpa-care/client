@@ -3,12 +3,12 @@ import Input from '@/components/common/Input';
 import theme from '@/styles/theme';
 import { css } from '@emotion/react';
 
-function NicknameAndPhoneNumberContents() {
+function ProfileContents() {
   const onClickHandler = () => {
     window.location.href = '/login';
   };
   return (
-    <div css={NicknameAndPhoneNumberContentsStyles}>
+    <div css={ProfileContentsStyles}>
       <div css={TitleStyles}>회원가입</div>
       <div css={ContentGroupStyles}>
         <div css={ContentItemStyles}>
@@ -33,7 +33,7 @@ function NicknameAndPhoneNumberContents() {
   );
 }
 
-const NicknameAndPhoneNumberContentsStyles = css`
+const ProfileContentsStyles = css`
   width: 400px;
   margin: 150px auto;
 `;
@@ -59,4 +59,4 @@ const ContentItemStyles = css`
   }
 `;
 
-export default NicknameAndPhoneNumberContents;
+export default ProfileContents;
