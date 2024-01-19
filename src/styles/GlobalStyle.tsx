@@ -11,7 +11,14 @@ const globals = css`
     padding: 0;
     margin: 0;
     font-size: 1rem;
+    font-family: 'pretendard';
   }
+
+  @font-face {
+    font-family: 'pretendard';
+    src: url('/fonts/PretendardVariable.ttf');
+  }
+
   svg {
     cursor: pointer;
   }
