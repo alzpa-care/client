@@ -4,6 +4,7 @@ import {
   ButtonStylesProps,
 } from '@/types/common/button';
 import { css } from '@emotion/react';
+import Icons from '@/components/common/Icons';
 
 function Button({
   content,
@@ -11,6 +12,7 @@ function Button({
   backgroundColor = theme.palette.primaryScale.primary,
   borderColor = theme.palette.primaryScale.primary,
   fontColor = theme.palette.white,
+  icon,
   onClick,
 }: ButtonProps) {
   return (
@@ -24,6 +26,7 @@ function Button({
       disabled={isDisabled}
       onClick={onClick}
     >
+      {icon && <Icons icon={icon} />}
       {content}
     </button>
   );
@@ -34,7 +37,12 @@ const ButtonStyles = ({
   borderColor,
   fontColor,
 }: ButtonStylesProps) => css`
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 55px;
   font-size: 16px;
   color: ${fontColor};
   background-color: ${backgroundColor};
