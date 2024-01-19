@@ -13,6 +13,7 @@ function Input({ placeholder }: InputProps) {
 }
 
 const inputStyles = css`
+  width: 100%;
   font-size: 16px;
   padding: 15px;
   border: ${theme.palette.greyScale.grey2} solid 1px;
