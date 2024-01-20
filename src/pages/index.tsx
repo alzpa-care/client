@@ -44,11 +44,17 @@ export default function Home() {
           diseaseIntroduction
         </Link>
         <br />
-        <Link aria-label="to dementiaTest  " href="/dementiaTest  ">
+        <Link
+          aria-label="to dementiaTest  "
+          href="/dementiaTest  "
+        >
           dementiaTest
         </Link>
         <br />
-        <Link aria-label="to community  " href="/community  ">
+        <Link
+          aria-label="to community  "
+          href="/community  "
+        >
           community
         </Link>
         <br />
