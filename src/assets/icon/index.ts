@@ -13,6 +13,11 @@ import Youtube from '@/assets/icon/Youtube.svg';
 import KSH from '@/assets/icon/KSH.svg';
 import KJW from '@/assets/icon/KJW.svg';
 import LYJ from '@/assets/icon/LYJ.svg';
+import Notice from '@/assets/icon/Notice.svg';
+import Like from '@/assets/icon/Like.svg';
+import Comment from '@/assets/icon/Comment.svg';
+import SimpleTest from '@/assets/icon/SimpleTest.svg';
+import DetailTest from '@/assets/icon/DetailTest.svg';
 
 export {
   CheckOn,
@@ -30,4 +35,9 @@ export {
   KSH,
   KJW,
   LYJ,
+  Notice,
+  Like,
+  Comment,
+  SimpleTest,
+  DetailTest,
 };

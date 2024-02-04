@@ -1,14 +1,14 @@
-import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
+import Header from '@/components/common/Header';
+import HomeContents from '@/components/home/HomeContents';
 import Link from 'next/link';
-import { css } from '@emotion/react';
 
 export default function Home() {
   return (
-    <div css={homeStyles}>
+    <>
       <Header />
-      <div>메인</div>
-
+      <HomeContents />
+      <Footer />
       <div>
         <Link aria-label="to usedTrade " href="/usedTrade ">
           usedTrade
@@ -59,11 +59,6 @@ export default function Home() {
         </Link>
         <br />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
-
-const homeStyles = css`
-  background-color: bisque;
-`;

@@ -66,7 +66,7 @@ const EmailInputStyles = css`
 
   span {
     font-size: 24px;
-    color: ${theme.palette.greyScale.grey3};
+    color: ${theme.palette.greyScale.grey2};
   }
 `;
 
