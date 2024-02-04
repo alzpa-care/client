@@ -8,7 +8,7 @@ const theme = {
     greyScale: {
       grey1: '#F3F3F3',
       grey2: '#D5D5D5',
-      grey3: '#D9D9D9',
+      // grey3: '#D9D9D9',
       grey4: '#767676',
     },
     primaryScale: {
